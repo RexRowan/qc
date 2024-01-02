@@ -1,0 +1,13 @@
+{% extends "learn/layout.html" %}
+{% load static %}
+{% block body %}
+
+<h1>Learn Quantum Computing!</h1>
+<button data-section="1">Introduction</button>
+<button data-section="2">Superposition</button>
+<button data-section="3">Qubits</button>
+<div id="content">
+</div>
+
+<script src="{% static 'scripts.js' %}"></script>
+{% endblock %}
