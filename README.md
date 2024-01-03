@@ -2,4 +2,4 @@
 
 Quantum Computing Learning Website built with JS frontend and Django backend.
 
-Asynchronous query and reload using fetch
+Asynchronous query Django server and reload content using fetch
