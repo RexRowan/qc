@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        padding: 0;
+    }
+    /* Add more styles for mobile responsiveness */
+}
+
+.section-image {
+    max-width: 1000px;
+    width: 100%; /* This will make the image responsive */
+    height: auto; /* This will maintain the aspect ratio */
+    padding: 20px 0px;
+}
