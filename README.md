@@ -12,5 +12,9 @@ dev
 # TODO
 - Registration / Login / Logout
 - User Dashboard / Management / Progress Tracking
-- Interactive components (demos / quizzes)
-  
+- Interactive components (demos/quizzes)
+
+# Run
+```
+python manage.py runserver
+```
