@@ -10,5 +10,7 @@ dev
 - Bootstrap
 
 # TODO
-- User Management
-- Progress Tracking
+- Registration / Login / Logout
+- User Dashboard / Management / Progress Tracking
+- Interactive components (demos / quizzes)
+  
