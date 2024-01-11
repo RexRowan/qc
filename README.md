@@ -4,8 +4,8 @@ dev
 # Features
 - JS frontend
 - Django backend
-- Sing Page App
-- Hot Module Reload
+- A single-page application (SPA)
+- Hot Module Replacement (HMR)
 - Mobile responsive
 - Bootstrap
 
