@@ -5,7 +5,7 @@ dev
 - JS frontend
 - Django backend
 - A single-page application (SPA)
-- Hot Module Replacement (HMR)
+- Hot Module Reload
 - Mobile responsive
 - Bootstrap
 
