@@ -1,0 +1,11 @@
+
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h1>{{ section.title }}</h1>
+  <p>{{ section.description }}</p>
+  {% if section.image %}
+    <img src="{{ section.image.url }}" alt="{{ section.title }}" class="section-image">
+  {% endif %}
+   <a href="{% url 'section_contents' section.id %}" class="btn btn-primary">Learn More</a>
+{% endblock %}

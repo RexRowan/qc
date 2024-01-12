@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+    .column {
+        width: 100%;
+        padding: 0;
+    }
+    /* Add more styles for mobile responsiveness */
+}
+
+.section-image {
+    max-width: 1000px;
+    width: 100%; /* This will make the image responsive */
+    height: auto; /* This will maintain the aspect ratio */
+    padding: 20px 0px;
+}
+
+.social-icons a {
+    color: #fff; /* White color for the icons */
+    margin: 0 15px; /* Spacing between icons */
+    font-size: 36px; /* Increase icon size to make them bigger */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.social-icons a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    padding: 20px 0; /* Padding for the footer */
+}
