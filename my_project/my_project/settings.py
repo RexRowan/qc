@@ -14,9 +14,9 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+AUTH_USER_MODEL = 'app.User'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-**z8r)^077*@j2i@q&x+so_h1ok4w6x#x$i)l%)5ji9t!+t279
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -70,7 +70,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
+WSGI_APPLICATION = "my_project.wsgi.application"
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -130,4 +131,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
+MEDIA_URL = '/media/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

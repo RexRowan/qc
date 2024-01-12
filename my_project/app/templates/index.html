@@ -1,0 +1,36 @@
+
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block title %}Quantum Journey - Your Pathway to Quantum Mastery{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="hero-section text-center">
+    <h1 class="display-4">Unlock the Power of Quantum Computing</h1>
+    <div class="text-center">
+    <img src="{% static 'images/index.jpg' %}" alt="Quantum Computing" class="img-fluid my-4">
+    </div>
+    <p class="lead">Step into the future of technology and harness the potential of quantum mechanics for groundbreaking advancements.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'section' 1 %}" role="button">Start Learning</a>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-lg-12">
+      <h2 class="text-center">Why Learn Quantum Computing?</h2>
+      <p>Quantum computing represents the next frontier of technological innovation, offering solutions to problems that are currently beyond the reach of classical computers. By understanding the principles of quantum mechanics, you can be part of a select group of experts driving progress in fields such as cryptography, materials science, and complex system modeling.</p>
+      <p>As quantum technology continues to evolve, the demand for skilled professionals in this area is rapidly growing. Learning quantum computing now will position you at the forefront of a tech revolution, opening doors to cutting-edge research opportunities and high-impact careers.</p>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-lg-12">
+      <h2 class="text-center">Why Choose Quantum Journey?</h2>
+      <p>Quantum Journey is more than just an educational platform; it's a community dedicated to demystifying quantum computing and making it accessible to everyone. Our carefully curated content is designed to take you from the basics of qubits and superposition to the complexities of quantum algorithms and beyond.</p>
+      <p>With interactive lessons, hands-on projects, and support from a network of quantum enthusiasts and professionals, Quantum Journey provides an immersive learning experience. Whether you're a student, a researcher, or just curious about quantum computing, our platform is the perfect place to start your quantum adventure.</p>
+      <p>Join us today and be part of the quantum leap into the future of computing!</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

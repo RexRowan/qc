@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h2>Contents for {{ section.title }}</h2>
+  {% for content in contents %}
+    <h2>{{ content.title }}</h2>
+    {% if content.image %}
+    <img src="{{ content.image.url }}" alt="{{ content.title }}">
+    {% endif %}
+    <p>{{ content.text }}</p>
+{% endfor %}
+{% endblock %}

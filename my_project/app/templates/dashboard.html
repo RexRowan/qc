@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h2>Dashboard</h2>
+  <ul>
+    {% for progress in user_progress %}
+      <li>
+        {{ progress.content.title }} -
+        {% if progress.completed %}
+          Completed
+        {% else %}
+          In Progress
+        {% endif %}
+        <!-- Add a button or link to mark as complete -->
+        <a href="{% url 'toggle_completion' progress.content.id %}">Mark as Complete</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
