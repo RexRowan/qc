@@ -4,6 +4,8 @@ Welcome to the Quantum Journey Learning Platform, an interactive and immersive e
 
 ## Features
 
+- **JavaScript Frontend with Django Backend**: The platform utilizes a robust JavaScript frontend for interactive UIs and a powerful Django backend for handling data, user sessions, and progress tracking, creating a full-stack web application.
+
 - **Single Page Application (SPA)**: Our platform is built as an SPA, providing a fluid user experience with minimal page reloads. Navigate through content effortlessly as you explore quantum computing concepts.
 
 - **Hot Module Replacement (HMR)**: Development is streamlined with HMR, allowing for real-time updates during the development process without the need for full page refreshes.
