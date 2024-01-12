@@ -2,6 +2,9 @@
 
 Welcome to the Quantum Journey Learning Platform, an interactive and immersive educational experience designed to guide you through the fascinating world of quantum computing. Our platform leverages modern web technologies to deliver a seamless and dynamic learning environment.
 
+![qci](https://github.com/RexRowan/qc/assets/4164511/983d092c-15fe-42bc-8ce2-6610b3eaacdf)
+
+
 ## Features
 
 - **JavaScript Frontend with Django Backend**: The platform utilizes a robust JavaScript frontend for interactive UIs and a powerful Django backend for handling data, user sessions, and progress tracking, creating a full-stack web application.
