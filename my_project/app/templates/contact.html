@@ -7,6 +7,11 @@
 <div class="container mt-5">
   <h1>Contact Us</h1>
   <p>If you have any questions, suggestions, or feedback, we'd love to hear from you. Reach out to us through the form below, and we'll get back to you as soon as possible.</p>
-  <!-- Add a contact form or contact information -->
-</div>
+
+  
+  <form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Send</button>
+  </form>
 {% endblock %}

@@ -10,6 +10,9 @@ import os
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from .models import Content, UserProgress, Section
+from django.core.mail import send_mail
+from .forms import ContactForm
+
 
 User = get_user_model()
 
@@ -103,9 +106,7 @@ def about(request):
     # Render the about page
     return render(request, 'about.html')
 
-def contact(request):
-    # Render the contact page
-    return render(request, 'contact.html')
+
 
 def careers(request):
     # Render the careers page
@@ -114,3 +115,29 @@ def careers(request):
 def community(request):
     # Render the community page
     return render(request, 'community.html')
+
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            # Process the form data
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+
+            # Send an email
+            send_mail(
+                f"Message from {name}: {subject}",
+                message,
+                email,
+                [settings.DEFAULT_FROM_EMAIL],
+                fail_silently=False,
+            )
+
+            # Redirect to a success page
+            return redirect('contact_success')
+    else:
+        form = ContactForm()
+
+    return render(request, 'contact.html', {'form': form})
